@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  height: 100vh;  
+}
+.App{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: #B7C4CF;
+  color: #E7F6F2;
+}
+
+li{
+  list-style: none;
+}
+textarea{
+  width: 250px;
+  height: 80px;
+  padding:  .3rem;
+  font-size: .8rem;
+}
+textarea:hover{
+  background-color: #D7C0AE;
+}
+.formulario{
+  padding: 1rem;
+  margin: 1rem 1rem 0 1rem;
+  background-color: #EEE3CB;
+  color: black;
+  box-shadow: 0px 10px 15px -3px #967E76;
+}
+.card-listTareas{
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  width: 70%;
+  background-color: #EEE3CB;
+  color: black;
+
+}
+.card-listTareas h1{
+  text-align: center;
+}
+.card-listTareas ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: .5rem;
+}
+.checkbox{
+  flex-direction:  row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+}
+button{
+  width:  65px;
+  height: 45px;
+  background-color: #967E76;
+  border: none;
+  border-radius: 7px;
+  color: black;
+}
+input{
+  padding: .3rem;
+}
+input:hover{
+  background-color: #D7C0AE;
+}
+.title{
+  margin-bottom: 1rem;
+}
+.list-items{
+  margin-bottom: 1rem;
+  border: 1px solid #967E76;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  box-shadow: 0px 10px 15px -3px #967E76;
+}
+.tarea-tittle{
+  text-align: center;
+  margin-bottom: .5rem;
+}
+.btn{
+  color: black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  padding: 1.1rem;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+.btn-delete{
+  background-color: #967E76;
+
+}
+.btn-update{
+  background-color: #D7C0AE;
+
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.btn-clear{
+  background-color: #D7C0AE;
+}
+.fi{
+  font-size: 1.2rem;
+}
+.img-cohete{
+  width: 1rem;
+}
+.fa-linux{
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .App{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .card-listTareas{
+    width: 100%;
+  }
+  .card-listTareas ul{
+    grid-template-columns: 1fr;
+  }
+}
